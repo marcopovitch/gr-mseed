@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<block>
+  <name>Open MSEED file</name>
+  <key>mseed_file_f</key>
+  <category>mseed</category>
+  <import>import mseed</import>
+  <make>mseed.file_f($filename)</make>
+  <!-- Make one 'param' node for every Parameter you want settable from the GUI.
+       Sub-nodes:
+       * name
+       * key (makes the value accessible as $keyname, e.g. in the make node)
+       * type -->
+  <param>
+    <name>mseed file name</name>
+    <key>filename</key>
+    <type>string</type>
+  </param>
+
+  <!-- Make one 'source' node per output. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <source>
+    <name>out</name>
+    <type>float</type>
+  </source>
+</block>

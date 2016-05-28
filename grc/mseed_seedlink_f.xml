@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<block>
+  <name>Seedlink Server</name>
+  <key>mseed_seedlink_f</key>
+  <category>mseed</category>
+  <import>import mseed</import>
+  <make>mseed.seedlink_f($server, $port, $channel)</make>
+  <!-- Make one 'param' node for every Parameter you want settable from the GUI.
+       Sub-nodes:
+       * name
+       * key (makes the value accessible as $keyname, e.g. in the make node)
+       * type -->
+  <param>
+    <name>server name</name>
+    <key>server</key>
+    <type>string</type>
+  </param>
+
+  <param>
+    <name>server port</name>
+    <key>port</key>
+    <type>int</type>
+  </param>
+
+  <param>
+    <name>channel</name>
+    <key>channel</key>
+    <type>string</type>
+  </param>
+
+  <!-- Make one 'source' node per output. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <source>
+    <name>out</name>
+    <type>float</type>
+  </source>
+</block>
