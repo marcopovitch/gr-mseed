@@ -28,5 +28,14 @@ make install
 
 ## Usage
 
-## links
+### Demo
+
+* The gnuradio-compagnon grc file is localted in the `examples` directory. To start the demo :
+
+	<pre>gnuradio-compagnon waterfall.grc</pre>
+
+* To try the standalone python app in the `examples` directory:
+	<pre>./top_block.py</pre>
+
+## Links
 * [Out Of Tree Module Tutorial](http://gnuradio.org/redmine/projects/gnuradio/wiki/OutOfTreeModules)
