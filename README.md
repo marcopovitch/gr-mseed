@@ -38,4 +38,4 @@ make install
 	<pre>./top_block.py</pre>
 
 ## Links
-* [Out Of Tree Module Tutorial](http://gnuradio.org/redmine/projects/gnuradio/wiki/OutOfTreeModules)
+* [Out Of Tree Module Tutorial](https://wiki.gnuradio.org/index.php/OutOfTreeModules)
